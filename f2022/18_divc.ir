@@ -1,0 +1,10 @@
+0		block	block1
+1	
+main.i:
+2		ASSIGN	t0.i	#2
+3		ASSIGN	r0.i	t0.i
+4		goto	.L1.i
+5		block	block2
+6	
+.L1.i:
+7		func_end:	main.i

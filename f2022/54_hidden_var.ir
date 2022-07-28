@@ -1,0 +1,198 @@
+0		block	block1
+1		alloca	#4	var1.i
+2		ASSIGN	t0.i	#5
+3		ASSIGN	var1.i	t0.i
+4		alloca	#16	var2.i
+5		ASSIGN	t1.i	#6
+6		arroff_expi	var2.i	#0	t1.i
+7		ASSIGN	t2.i	#7
+8		arroff_expi	var2.i	#4	t2.i
+9		ASSIGN	t3.i	#8
+10		arroff_expi	var2.i	#8	t3.i
+11		ASSIGN	t4.i	#9
+12		arroff_expi	var2.i	#12	t4.i
+13	
+main.i:
+14		alloca	#4	var3.i
+15		ASSIGN	t0.i	#1
+16		ASSIGN	var3.i	t0.i
+17		alloca	#4	var3.i
+18		ASSIGN	t1.i	#2
+19		ASSIGN	var3.i	t1.i
+20		ASSIGN	t2.i	#3
+21		ASSIGN	var3.i	t2.i
+22		load	var3.i	t3.i
+23		arg	t3.i
+24		call_void	putint.i
+25		arg	t3.i
+26		call_void	putint.i
+27		load	var3.i	t4.i
+28		arg	t4.i
+29		call_void	putint.i
+30		ASSIGN	t5.i	#10
+31		arg	t5.i
+32		call_void	putch.i
+33	
+.L11.i:
+34		load	var3.i	t6.i
+35		ASSIGN	t7.i	#5
+36		jlt	t6.i	t7.i	t8.i
+37		block	block2
+38		goto_eq	t8.i	#1	.L12.i
+39		goto	.L13.i
+40		block	block3
+41	
+.L12.i:
+42		alloca	#4	var3.i
+43		ASSIGN	t9.i	#0
+44		ASSIGN	var3.i	t9.i
+45		load	var3.i	t10.i
+46		ASSIGN	t11.i	#1
+47		add	t10.i	t11.i	t12.i
+48		ASSIGN	var3.i	t12.i
+49		load	var3.i	t13.i
+50		neq	t13.i	#0	t13.i
+51		block	block4
+52		goto_eq	t13.i	#1	.L23.i
+53		goto	.L24.i
+54		block	block5
+55	
+.L23.i:
+56		goto	.L13.i
+57		block	block6
+58	
+.L24.i:
+59		goto	.L11.i
+60		block	block7
+61	
+.L13.i:
+62		load	var3.i	t14.i
+63		arg	t14.i
+64		call_void	putint.i
+65		ASSIGN	t15.i	#10
+66		arg	t15.i
+67		call_void	putch.i
+68		ASSIGN	t17.i	#1
+69		ASSIGN	t16.i	#2
+70		arroff_exp	t17.i,	[var2.i, t16.i]
+71		alloca	#64	var2.i
+72		ASSIGN	t18.i	#0
+73		arg	t18.i
+74		ASSIGN	t19.i	#64
+75		arg	t19.i
+76		ASSIGN	t20.i	#-80
+77		add	t20.i	 .i	t21.i
+78		arg	t21.i
+79		call_void	memset(PLT).i
+80		ASSIGN	t22.i	#0
+81		arroff_expi	var2.i	#0	t22.i
+82		ASSIGN	t23.i	#9
+83		arroff_expi	var2.i	#4	t23.i
+84		arroff_expi0	var2.i	#32	#8
+85		ASSIGN	t24.i	#8
+86		arroff_expi	var2.i	#32	t24.i
+87		ASSIGN	t25.i	#3
+88		arroff_expi	var2.i	#36	t25.i
+89		arroff_expi0	var2.i	#64	#40
+90		alloca	#4	var1.i
+91		ASSIGN	t26.i	#2
+92		ASSIGN	var1.i	t26.i
+93		ASSIGN	t27.i	#2
+94		exp_arroff	t28.i,	[var2.i, t27.i]
+95		neq	t28.i	#0	t28.i
+96		block	block8
+97		goto_eq	t28.i	#1	.L28.i
+98		goto	.L29.i
+99		block	block9
+100	
+.L28.i:
+101		alloca	#140	var2.i
+102		ASSIGN	t29.i	#0
+103		arg	t29.i
+104		ASSIGN	t30.i	#140
+105		arg	t30.i
+106		ASSIGN	t31.i	#-160
+107		add	t31.i	 .i	t32.i
+108		arg	t32.i
+109		call_void	memset(PLT).i
+110		arroff_expi0	var2.i	#20	#0
+111		arroff_expi0	var2.i	#40	#20
+112		ASSIGN	t33.i	#2
+113		arroff_expi	var2.i	#40	t33.i
+114		ASSIGN	t34.i	#1
+115		arroff_expi	var2.i	#44	t34.i
+116		ASSIGN	t35.i	#8
+117		arroff_expi	var2.i	#48	t35.i
+118		arroff_expi0	var2.i	#60	#60
+119		arroff_expi0	var2.i	#140	#64
+120		load	var1.i	t36.i
+121		ASSIGN	t37.i	#0
+122		ASSIGN	t38.i	#5
+123		ASSIGN	t39.i	#0
+124		mul	t38.i	t39.i	t40.i
+125		add	t37.i	t40.i	t41.i
+126		ASSIGN	t42.i	#5
+127		mul	t42.i	t36.i	t43.i
+128		add	t41.i	t43.i	t44.i
+129		exp_arroff	t45.i,	[var2.i, t44.i]
+130		arg	t45.i
+131		call_void	putint.i
+132		ASSIGN	t46.i	#1
+133		ASSIGN	t47.i	#5
+134		ASSIGN	t48.i	#0
+135		mul	t47.i	t48.i	t49.i
+136		add	t46.i	t49.i	t50.i
+137		ASSIGN	t51.i	#5
+138		mul	t51.i	t36.i	t52.i
+139		add	t50.i	t52.i	t53.i
+140		exp_arroff	t54.i,	[var2.i, t53.i]
+141		arg	t54.i
+142		call_void	putint.i
+143		ASSIGN	t55.i	#2
+144		ASSIGN	t56.i	#5
+145		ASSIGN	t57.i	#0
+146		mul	t56.i	t57.i	t58.i
+147		add	t55.i	t58.i	t59.i
+148		ASSIGN	t60.i	#5
+149		mul	t60.i	t36.i	t61.i
+150		add	t59.i	t61.i	t62.i
+151		exp_arroff	t63.i,	[var2.i, t62.i]
+152		arg	t63.i
+153		call_void	putint.i
+154	
+.L29.i:
+155		ASSIGN	t64.i	#10
+156		arg	t64.i
+157		call_void	putch.i
+158		load	var1.i	t65.i
+159		arg	t65.i
+160		call_void	putint.i
+161		ASSIGN	t66.i	#10
+162		arg	t66.i
+163		call_void	putch.i
+164		ASSIGN	t67.i	#0
+165		exp_arroff	t68.i,	[var2.i, t67.i]
+166		arg	t68.i
+167		call_void	putint.i
+168		ASSIGN	t69.i	#1
+169		exp_arroff	t70.i,	[var2.i, t69.i]
+170		arg	t70.i
+171		call_void	putint.i
+172		ASSIGN	t71.i	#2
+173		exp_arroff	t72.i,	[var2.i, t71.i]
+174		arg	t72.i
+175		call_void	putint.i
+176		ASSIGN	t73.i	#3
+177		exp_arroff	t74.i,	[var2.i, t73.i]
+178		arg	t74.i
+179		call_void	putint.i
+180		ASSIGN	t75.i	#10
+181		arg	t75.i
+182		call_void	putch.i
+183		ASSIGN	t76.i	#0
+184		ASSIGN	r0.i	t76.i
+185		goto	.L1.i
+186		block	block10
+187	
+.L1.i:
+188		func_end:	main.i

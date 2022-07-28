@@ -1,0 +1,77 @@
+改静态语义检查，去除错误报错；√
+整理静态语义检查，把全局变量，函数接口理清楚，尽可能模块化。√
+
+改符号表，添加更全面的对数组的定义支持；√
+改符号表维持代码，添加对变量地址（偏移量）的维护。√
+
+
+
+添加生成opn和code_node的代码；
+在合理的位置维护每个抽象语法树对应的code。
+：
+    常值，变量的计算 √
+    函数的定义，形参，实参，返回，调用 √
+    label 和 goto维护。√ 
+    判断和循环√
+    常量和数组，它们的中间代码生成及对应语义检查 √
+    库函数支持 √
+    数组超限问题和索引维度问题判断 √
+
+输出中间代码。 √
+
+全局模块化 √
+    分为：ast生成（只进行语法，词法检错），符号表生成，静态语义分析，中间代码生成四个模块；√
+
+数组索引超限检错；√ 
+    ：通过流程检查实现
+改判断语句中间代码； √
+
+中间代码输出时label和function语句前加空行增强可读性。 √
+
+指令生成提高模块化程度；
+    ：label，goto语句生成模块化 √
+    运算语句生成模块化 √
+
+全局变量赋初值报段错；初值不生成代码； √
+
+局部常量；空语句；√
+
+常量初值语义检查,
+
+添加变量定义，分配空间，内存存取,初始化的相关代码； √
+
+添加支持短路；√
+
+改语法，添加数组型参数； √
+    支持常数类型索引的数组参数，表达式类型仅语法支持，不能生成中间代码。
+
+
+改语法分析，支持数组批量初始化； 常数组；变量格式内情表；分配语句改双变量结点；√
+
+    ：1维 √
+    多维 X
+
+打印为llvm ir 格式；
+
+
+
+改条件语句的输出，改成纯bool型（只能为0，1值的int型）； X
+ 
+
+数组初始化检查； X
+
+
+clang -emit-llvm ../test/test.c -S -o ../test/clang_t.ll
+
+
+//交叉编译器编译c文件成汇编；
+arm-linux-gcc  -march=armv7-a -mtune=cortex-a9 -static ../test/test_in/test.c -S -o ../test/arm_out/test.s 
+
+//交叉编译器编译汇编到运行文件；
+arm-linux-gcc  -march=armv7-a -mtune=cortex-a9 -static ../test/fcl_arm_out/test.s -o ../test/arm_out/test.out
+
+//运行文件
+qemu-arm ../test/arm_out/test.out
+
+arm-linux-gcc  -march=armv7-a -mtune=cortex-a9 -static  test.c -o test
+qemu-arm test

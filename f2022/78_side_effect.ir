@@ -1,0 +1,166 @@
+0		block	block1
+1		alloca	#4	var1.i
+2		ASSIGN	t0.i	#-1
+3		ASSIGN	var1.i	t0.i
+4		alloca	#4	var2.i
+5		ASSIGN	t1.i	#1
+6		ASSIGN	var2.i	t1.i
+7	
+func1.i:
+8		alloca	#4	var2.i
+9		load	var1.i	t0.i
+10		ASSIGN	var2.i	t0.i
+11		load	var2.i	t1.i
+12		ASSIGN	t2.i	#1
+13		add	t1.i	t2.i	t3.i
+14		ASSIGN	var2.i	t3.i
+15		ASSIGN	var1.i	t3.i
+16		load	var1.i	t4.i
+17		ASSIGN	r0.i	t4.i
+18		goto	.L1.i
+19		block	block2
+20	
+.L1.i:
+21		func_end:	func1.i
+22	
+main.i:
+23		alloca	#4	var3.i
+24		ASSIGN	t0.i	#5
+25		ASSIGN	var3.i	t0.i
+26	
+.L12.i:
+27		load	var3.i	t1.i
+28		ASSIGN	t2.i	#0
+29		jge	t1.i	t2.i	t3.i
+30		block	block3
+31		goto_eq	t3.i	#1	.L13.i
+32		goto	.L14.i
+33		block	block4
+34	
+.L13.i:
+35		CALL	func1.i	t4.i
+36		neq	t4.i	#0	t5.i
+37		block	block5
+38		goto_eq	t4.i	#1	.L24.i
+39		goto	.L23.i
+40		block	block6
+41	
+.L24.i:
+42		CALL	func1.i	t5.i
+43		neq	t5.i	#0	t6.i
+44		block	block7
+45	
+.L25.i:
+46	
+.L23.i:
+47		goto_eq	t4.i	#1	.L21.i
+48		goto	.L20.i
+49		block	block8
+50	
+.L21.i:
+51		CALL	func1.i	t7.i
+52		neq	t7.i	#0	t8.i
+53		block	block9
+54	
+.L22.i:
+55	
+.L20.i:
+56		goto_eq	t4.i	#1	.L18.i
+57		goto	.L19.i
+58		block	block10
+59	
+.L18.i:
+60		load	var1.i	t9.i
+61		arg	t9.i
+62		call_void	putint.i
+63		ASSIGN	t10.i	#32
+64		arg	t10.i
+65		call_void	putch.i
+66		load	var2.i	t11.i
+67		arg	t11.i
+68		call_void	putint.i
+69		ASSIGN	t12.i	#10
+70		arg	t12.i
+71		call_void	putch.i
+72	
+.L19.i:
+73		CALL	func1.i	t13.i
+74		ASSIGN	t14.i	#14
+75		jlt	t13.i	t14.i	t15.i
+76		block	block11
+77		goto_eq	t15.i	#1	.L29.i
+78		goto	.L30.i
+79		block	block12
+80	
+.L30.i:
+81		CALL	func1.i	t16.i
+82		neq	t16.i	#0	t21.i
+83		block	block13
+84		goto_eq	t16.i	#1	.L36.i
+85		goto	.L35.i
+86		block	block14
+87	
+.L36.i:
+88		CALL	func1.i	t17.i
+89		CALL	func1.i	t18.i
+90		sub	t17.i	t18.i	t19.i
+91		ASSIGN	t20.i	#1
+92		add	t19.i	t20.i	t21.i
+93		neq	t21.i	#0	t22.i
+94		block	block15
+95	
+.L37.i:
+96	
+.L35.i:
+97	
+.L31.i:
+98	
+.L29.i:
+99		goto_eq	t15.i	#1	.L26.i
+100		goto	.L27.i
+101		block	block16
+102	
+.L26.i:
+103		load	var1.i	t24.i
+104		arg	t24.i
+105		call_void	putint.i
+106		ASSIGN	t25.i	#10
+107		arg	t25.i
+108		call_void	putch.i
+109		load	var2.i	t26.i
+110		ASSIGN	t27.i	#2
+111		mul	t26.i	t27.i	t28.i
+112		ASSIGN	var2.i	t28.i
+113		goto	.L28.i
+114		block	block17
+115	
+.L27.i:
+116		CALL	func1.i	t29.i
+117	
+.L28.i:
+118		load	var3.i	t30.i
+119		ASSIGN	t31.i	#1
+120		sub	t30.i	t31.i	t32.i
+121		ASSIGN	var3.i	t32.i
+122		goto	.L12.i
+123		block	block18
+124	
+.L14.i:
+125		load	var1.i	t33.i
+126		arg	t33.i
+127		call_void	putint.i
+128		ASSIGN	t34.i	#32
+129		arg	t34.i
+130		call_void	putch.i
+131		load	var2.i	t35.i
+132		arg	t35.i
+133		call_void	putint.i
+134		ASSIGN	t36.i	#10
+135		arg	t36.i
+136		call_void	putch.i
+137		ASSIGN	r0.i	t33.i
+138		goto	.L11.i
+139		block	block19
+140	
+.L11.i:
+141		func_end:	main.i

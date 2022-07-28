@@ -1,0 +1,253 @@
+0		block	block1
+1		alloca	#4	var1.i
+2	
+main.i:
+3		alloca	#4	var2.i
+4		alloca	#4	var3.i
+5		alloca	#4	var4.i
+6		alloca	#4	var5.i
+7		alloca	#4	var6.i
+8		alloca	#4	var7.i
+9		alloca	#4	var8.i
+10		alloca	#4	var9.i
+11		alloca	#4	var10.i
+12		alloca	#4	var11.i
+13		alloca	#4	var12.i
+14		alloca	#4	var13.i
+15		alloca	#4	var14.i
+16		alloca	#4	var15.i
+17		alloca	#4	var16.i
+18		alloca	#4	var17.i
+19		alloca	#4	var18.i
+20		alloca	#4	var19.i
+21		alloca	#4	var20.i
+22		alloca	#4	var21.i
+23		alloca	#4	var22.i
+24		alloca	#4	var23.i
+25		alloca	#4	var24.i
+26		alloca	#4	var25.i
+27		alloca	#4	var26.i
+28		alloca	#4	var27.i
+29		alloca	#4	var28.i
+30		alloca	#4	var29.i
+31		alloca	#4	var30.i
+32		alloca	#4	var31.i
+33		alloca	#4	var32.i
+34		CALL	getint.i	t0.i
+35		ASSIGN	var32.i	t0.i
+36	
+.L5.i:
+37		load	var32.i	t1.i
+38		ASSIGN	t2.i	#5
+39		eq	t1.i	t2.i	t3.i
+40		block	block2
+41		goto_eq	t3.i	#1	.L6.i
+42		goto	.L7.i
+43		block	block3
+44	
+.L6.i:
+45		load	var32.i	t4.i
+46		ASSIGN	t5.i	#1
+47		add	t4.i	t5.i	t6.i
+48		ASSIGN	var32.i	t6.i
+49		goto	.L5.i
+50		block	block4
+51	
+.L7.i:
+52		ASSIGN	t7.i	#0
+53		ASSIGN	var2.i	t7.i
+54		load	var2.i	t8.i
+55		ASSIGN	t9.i	#1
+56		add	t8.i	t9.i	t10.i
+57		ASSIGN	var3.i	t10.i
+58		load	var3.i	t11.i
+59		ASSIGN	t12.i	#1
+60		add	t11.i	t12.i	t13.i
+61		ASSIGN	var4.i	t13.i
+62		load	var4.i	t14.i
+63		ASSIGN	t15.i	#1
+64		add	t14.i	t15.i	t16.i
+65		ASSIGN	var5.i	t16.i
+66		load	var5.i	t17.i
+67		ASSIGN	t18.i	#1
+68		add	t17.i	t18.i	t19.i
+69		ASSIGN	var6.i	t19.i
+70		load	var6.i	t20.i
+71		ASSIGN	t21.i	#1
+72		add	t20.i	t21.i	t22.i
+73		ASSIGN	var7.i	t22.i
+74		load	var7.i	t23.i
+75		ASSIGN	t24.i	#1
+76		add	t23.i	t24.i	t25.i
+77		ASSIGN	var8.i	t25.i
+78		load	var8.i	t26.i
+79		ASSIGN	t27.i	#1
+80		add	t26.i	t27.i	t28.i
+81		ASSIGN	var9.i	t28.i
+82		load	var9.i	t29.i
+83		ASSIGN	t30.i	#1
+84		add	t29.i	t30.i	t31.i
+85		ASSIGN	var10.i	t31.i
+86		load	var10.i	t32.i
+87		ASSIGN	t33.i	#1
+88		add	t32.i	t33.i	t34.i
+89		ASSIGN	var11.i	t34.i
+90		load	var11.i	t35.i
+91		ASSIGN	t36.i	#1
+92		add	t35.i	t36.i	t37.i
+93		ASSIGN	var12.i	t37.i
+94		load	var12.i	t38.i
+95		ASSIGN	t39.i	#1
+96		add	t38.i	t39.i	t40.i
+97		ASSIGN	var13.i	t40.i
+98		load	var13.i	t41.i
+99		ASSIGN	t42.i	#1
+100		add	t41.i	t42.i	t43.i
+101		ASSIGN	var14.i	t43.i
+102		load	var14.i	t44.i
+103		ASSIGN	t45.i	#1
+104		add	t44.i	t45.i	t46.i
+105		ASSIGN	var15.i	t46.i
+106		load	var15.i	t47.i
+107		ASSIGN	t48.i	#1
+108		add	t47.i	t48.i	t49.i
+109		ASSIGN	var16.i	t49.i
+110		load	var16.i	t50.i
+111		ASSIGN	t51.i	#1
+112		add	t50.i	t51.i	t52.i
+113		ASSIGN	var17.i	t52.i
+114		load	var17.i	t53.i
+115		ASSIGN	t54.i	#1
+116		add	t53.i	t54.i	t55.i
+117		ASSIGN	var18.i	t55.i
+118		load	var18.i	t56.i
+119		ASSIGN	t57.i	#1
+120		add	t56.i	t57.i	t58.i
+121		ASSIGN	var19.i	t58.i
+122		load	var19.i	t59.i
+123		ASSIGN	t60.i	#1
+124		add	t59.i	t60.i	t61.i
+125		ASSIGN	var20.i	t61.i
+126		load	var20.i	t62.i
+127		ASSIGN	t63.i	#1
+128		add	t62.i	t63.i	t64.i
+129		ASSIGN	var21.i	t64.i
+130		load	var21.i	t65.i
+131		ASSIGN	t66.i	#1
+132		add	t65.i	t66.i	t67.i
+133		ASSIGN	var22.i	t67.i
+134		load	var22.i	t68.i
+135		ASSIGN	t69.i	#1
+136		add	t68.i	t69.i	t70.i
+137		ASSIGN	var23.i	t70.i
+138		load	var23.i	t71.i
+139		ASSIGN	t72.i	#1
+140		add	t71.i	t72.i	t73.i
+141		ASSIGN	var24.i	t73.i
+142		load	var24.i	t74.i
+143		ASSIGN	t75.i	#1
+144		add	t74.i	t75.i	t76.i
+145		ASSIGN	var25.i	t76.i
+146		load	var25.i	t77.i
+147		ASSIGN	t78.i	#1
+148		add	t77.i	t78.i	t79.i
+149		ASSIGN	var26.i	t79.i
+150		load	var26.i	t80.i
+151		ASSIGN	t81.i	#1
+152		add	t80.i	t81.i	t82.i
+153		ASSIGN	var27.i	t82.i
+154		load	var27.i	t83.i
+155		ASSIGN	t84.i	#1
+156		add	t83.i	t84.i	t85.i
+157		ASSIGN	var28.i	t85.i
+158		load	var28.i	t86.i
+159		ASSIGN	t87.i	#1
+160		add	t86.i	t87.i	t88.i
+161		ASSIGN	var29.i	t88.i
+162		load	var29.i	t89.i
+163		ASSIGN	t90.i	#1
+164		add	t89.i	t90.i	t91.i
+165		ASSIGN	var30.i	t91.i
+166		load	var30.i	t92.i
+167		ASSIGN	t93.i	#1
+168		add	t92.i	t93.i	t94.i
+169		ASSIGN	var31.i	t94.i
+170		alloca	#4	var33.i
+171		arg	t8.i
+172		call_void	putint.i
+173		arg	t11.i
+174		call_void	putint.i
+175		arg	t14.i
+176		call_void	putint.i
+177		arg	t17.i
+178		call_void	putint.i
+179		arg	t20.i
+180		call_void	putint.i
+181		arg	t23.i
+182		call_void	putint.i
+183		arg	t26.i
+184		call_void	putint.i
+185		arg	t29.i
+186		call_void	putint.i
+187		arg	t32.i
+188		call_void	putint.i
+189		arg	t35.i
+190		call_void	putint.i
+191		arg	t38.i
+192		call_void	putint.i
+193		arg	t41.i
+194		call_void	putint.i
+195		arg	t44.i
+196		call_void	putint.i
+197		arg	t47.i
+198		call_void	putint.i
+199		arg	t50.i
+200		call_void	putint.i
+201		arg	t53.i
+202		call_void	putint.i
+203		arg	t56.i
+204		call_void	putint.i
+205		arg	t59.i
+206		call_void	putint.i
+207		arg	t62.i
+208		call_void	putint.i
+209		arg	t65.i
+210		call_void	putint.i
+211		arg	t68.i
+212		call_void	putint.i
+213		arg	t71.i
+214		call_void	putint.i
+215		arg	t74.i
+216		call_void	putint.i
+217		arg	t77.i
+218		call_void	putint.i
+219		arg	t80.i
+220		call_void	putint.i
+221		arg	t83.i
+222		call_void	putint.i
+223		arg	t86.i
+224		call_void	putint.i
+225		arg	t89.i
+226		call_void	putint.i
+227		arg	t92.i
+228		call_void	putint.i
+229		load	var31.i	t95.i
+230		arg	t95.i
+231		call_void	putint.i
+232		alloca	#4	var34.i
+233		ASSIGN	t96.i	#10
+234		ASSIGN	var34.i	t96.i
+235		load	var34.i	t97.i
+236		arg	t97.i
+237		call_void	putch.i
+238		load	var32.i	t98.i
+239		arg	t98.i
+240		call_void	putint.i
+241		arg	t97.i
+242		call_void	putch.i
+243		ASSIGN	r0.i	t83.i
+244		goto	.L1.i
+245		block	block5
+246	
+.L1.i:
+247		func_end:	main.i

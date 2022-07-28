@@ -1,0 +1,6 @@
+/home/chui/compiler_fcl/compiler
+-ir
+-o
+/home/chui/compiler_fcl/test_out.txt
+@@
+/home/chui/compiler_fcl/fuzz/fuzz_output

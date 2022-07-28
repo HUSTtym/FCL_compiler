@@ -1,0 +1,45 @@
+0		block	block1
+1	
+main.i:
+2		alloca	#4	var1.i
+3		alloca	#4	var2.i
+4		ASSIGN	t0.i	#56
+5		ASSIGN	var1.i	t0.i
+6		ASSIGN	t1.i	#4
+7		ASSIGN	var2.i	t1.i
+8		load	var1.i	t2.i
+9		ASSIGN	t3.i	#-4
+10		sub	t2.i	t3.i	t4.i
+11		load	var2.i	t5.i
+12		add	t4.i	t5.i	t6.i
+13		ASSIGN	var1.i	t6.i
+14		not	t6.i	t7.i
+15		not	t7.i	t8.i
+16		not	t8.i	t9.i
+17		uminus	t9.i	t10.i
+18		goto_eq	t10.i	#1	.L17.i
+19		goto	.L18.i
+20		block	block2
+21	
+.L17.i:
+22		ASSIGN	t11.i	#-1
+23		ASSIGN	var1.i	t11.i
+24		goto	.L19.i
+25		block	block3
+26	
+.L18.i:
+27		ASSIGN	t12.i	#0
+28		add	t12.i	t5.i	t13.i
+29		ASSIGN	var1.i	t13.i
+30	
+.L19.i:
+31		load	var1.i	t14.i
+32		arg	t14.i
+33		call_void	putint.i
+34		ASSIGN	t15.i	#0
+35		ASSIGN	r0.i	t15.i
+36		goto	.L1.i
+37		block	block4
+38	
+.L1.i:
+39		func_end:	main.i

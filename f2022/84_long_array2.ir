@@ -1,0 +1,95 @@
+0		block	block1
+1		alloca	#16384	var1.i
+2	
+func1.i:
+3		param	var2.i
+4		alloca	#4	.i
+5		ASSIGN	t1.i	#4000
+6		ASSIGN	t0.i	#5
+7		arroff_exp	t1.i,	[var1.i, t0.i]
+8		ASSIGN	t3.i	#3
+9		ASSIGN	t2.i	#4000
+10		arroff_exp	t3.i,	[var1.i, t2.i]
+11		ASSIGN	t5.i	#7
+12		ASSIGN	t4.i	#4095
+13		arroff_exp	t5.i,	[var1.i, t4.i]
+14		ASSIGN	t6.i	#2216
+15		exp_arroff	t7.i,	[var1.i, t6.i]
+16		ASSIGN	t8.i	#9
+17		add	t7.i	t8.i	t9.i
+18		ASSIGN	t10.i	#4095
+19		exp_arroff	t11.i,	[var1.i, t10.i]
+20		load	var2.i	t12.i
+21		arroff_exp	t9.i,	[t12.i, t11.i]
+22		ASSIGN	t13.i	#5
+23		exp_arroff	t14.i,	[var1.i, t13.i]
+24		exp_arroff	t15.i,	[var1.i, t14.i]
+25		ASSIGN	r0.i	t15.i
+26		goto	.L1.i
+27		block	block2
+28	
+.L1.i:
+29		func_end:	func1.i
+30	
+main.i:
+31		alloca	#16384	var2.i
+32		ASSIGN	t0.i	#0
+33		arg	t0.i
+34		ASSIGN	t1.i	#16384
+35		arg	t1.i
+36		ASSIGN	t2.i	#-16396
+37		add	t2.i	 .i	t3.i
+38		arg	t3.i
+39		call_void	memset(PLT).i
+40		ASSIGN	t4.i	#1
+41		ASSIGN	t5.i	#4096
+42		arroff_expi	var2.i	t5.i	t4.i
+43		ASSIGN	t6.i	#2
+44		ASSIGN	t7.i	#8192
+45		arroff_expi	var2.i	t7.i	t6.i
+46		ASSIGN	t8.i	#3
+47		ASSIGN	t9.i	#8196
+48		arroff_expi	var2.i	t9.i	t8.i
+49		ASSIGN	t10.i	#4
+50		ASSIGN	t11.i	#12288
+51		arroff_expi	var2.i	t11.i	t10.i
+52		ASSIGN	t12.i	#5
+53		ASSIGN	t13.i	#12292
+54		arroff_expi	var2.i	t13.i	t12.i
+55		ASSIGN	t14.i	#6
+56		ASSIGN	t15.i	#12296
+57		arroff_expi	var2.i	t15.i	t14.i
+58		alloca	#16384	var3.i
+59		ASSIGN	t16.i	#0
+60		arg	t16.i
+61		ASSIGN	t17.i	#16384
+62		arg	t17.i
+63		ASSIGN	t18.i	#-32780
+64		add	t18.i	 .i	t19.i
+65		arg	t19.i
+66		call_void	memset(PLT).i
+67		ASSIGN	t20.i	#1
+68		arroff_expi	var3.i	#0	t20.i
+69		ASSIGN	t21.i	#2
+70		arroff_expi	var3.i	#4	t21.i
+71		ASSIGN	t22.i	#3
+72		arroff_expi	var3.i	#16	t22.i
+73		ASSIGN	t23.i	#4
+74		arroff_expi	var3.i	#20	t23.i
+75		ASSIGN	t24.i	#0
+76		exp_arroffa	var3.i	t24.i	t25.i
+77		arg	t25.i
+78		CALL	func1.i	t26.i
+79		arg	t26.i
+80		call_void	putint.i
+81		ASSIGN	t27.i	#10
+82		arg	t27.i
+83		call_void	putch.i
+84		ASSIGN	t28.i	#8
+85		exp_arroff	t29.i,	[var3.i, t28.i]
+86		ASSIGN	r0.i	t29.i
+87		goto	.L17.i
+88		block	block3
+89	
+.L17.i:
+90		func_end:	main.i

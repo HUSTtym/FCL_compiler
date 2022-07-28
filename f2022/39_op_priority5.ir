@@ -1,0 +1,79 @@
+0		block	block1
+1		alloca	#4	var1.i
+2		ASSIGN	t0.i	#1
+3		ASSIGN	var1.i	t0.i
+4		alloca	#4	var2.i
+5		ASSIGN	t1.i	#0
+6		ASSIGN	var2.i	t1.i
+7		alloca	#4	var3.i
+8		ASSIGN	t2.i	#1
+9		ASSIGN	var3.i	t2.i
+10		alloca	#4	var4.i
+11		ASSIGN	t3.i	#2
+12		ASSIGN	var4.i	t3.i
+13		alloca	#4	var5.i
+14		ASSIGN	t4.i	#4
+15		ASSIGN	var5.i	t4.i
+16	
+main.i:
+17		alloca	#4	var6.i
+18		ASSIGN	t0.i	#0
+19		ASSIGN	var6.i	t0.i
+20		load	var1.i	t1.i
+21		load	var2.i	t2.i
+22		mul	t1.i	t2.i	t3.i
+23		load	var3.i	t4.i
+24		div	t3.i	t4.i	t5.i
+25		load	var5.i	t6.i
+26		load	var4.i	t7.i
+27		add	t6.i	t7.i	t8.i
+28		eq	t5.i	t8.i	t9.i
+29		block	block2
+30		goto_eq	t9.i	#1	.L8.i
+31		goto	.L7.i
+32		block	block3
+33	
+.L8.i:
+34		add	t1.i	t2.i	t10.i
+35		mul	t1.i	t10.i	t11.i
+36		add	t11.i	t4.i	t12.i
+37		add	t7.i	t6.i	t13.i
+38		jle	t12.i	t13.i	t14.i
+39		block	block4
+40	
+.L9.i:
+41	
+.L7.i:
+42		goto_eq	t9.i	#1	.L4.i
+43		goto	.L5.i
+44		block	block5
+45	
+.L5.i:
+46		mul	t2.i	t4.i	t16.i
+47		sub	t1.i	t16.i	t17.i
+48		div	t1.i	t4.i	t18.i
+49		sub	t7.i	t18.i	t19.i
+50		eq	t17.i	t19.i	t20.i
+51		block	block6
+52	
+.L6.i:
+53	
+.L4.i:
+54		goto_eq	t9.i	#1	.L2.i
+55		goto	.L3.i
+56		block	block7
+57	
+.L2.i:
+58		ASSIGN	t22.i	#1
+59		ASSIGN	var6.i	t22.i
+60	
+.L3.i:
+61		load	var6.i	t23.i
+62		arg	t23.i
+63		call_void	putint.i
+64		ASSIGN	r0.i	t23.i
+65		goto	.L1.i
+66		block	block8
+67	
+.L1.i:
+68		func_end:	main.i

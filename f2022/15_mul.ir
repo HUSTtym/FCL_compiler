@@ -1,0 +1,18 @@
+0		block	block1
+1	
+main.i:
+2		alloca	#4	var1.i
+3		alloca	#4	var2.i
+4		ASSIGN	t0.i	#10
+5		ASSIGN	var1.i	t0.i
+6		ASSIGN	t1.i	#5
+7		ASSIGN	var2.i	t1.i
+8		load	var1.i	t2.i
+9		load	var2.i	t3.i
+10		mul	t2.i	t3.i	t4.i
+11		ASSIGN	r0.i	t4.i
+12		goto	.L1.i
+13		block	block2
+14	
+.L1.i:
+15		func_end:	main.i

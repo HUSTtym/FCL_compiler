@@ -1,0 +1,127 @@
+0		block	block1
+1	
+main.i:
+2		alloca	#4	var1.i
+3		alloca	#4	var2.i
+4		alloca	#4	var3.i
+5		alloca	#4	var4.i
+6		alloca	#4	var5.i
+7		ASSIGN	t0.i	#5
+8		ASSIGN	var1.i	t0.i
+9		ASSIGN	t1.i	#5
+10		ASSIGN	var2.i	t1.i
+11		ASSIGN	t2.i	#1
+12		ASSIGN	var3.i	t2.i
+13		ASSIGN	t3.i	#-2
+14		ASSIGN	var4.i	t3.i
+15		ASSIGN	t4.i	#2
+16		ASSIGN	var5.i	t4.i
+17		load	var4.i	t5.i
+18		ASSIGN	t6.i	#1
+19		mul	t5.i	t6.i	t7.i
+20		ASSIGN	t8.i	#2
+21		div	t7.i	t8.i	t9.i
+22		ASSIGN	t10.i	#0
+23		jlt	t9.i	t10.i	t11.i
+24		block	block2
+25		goto_eq	t11.i	#1	.L19.i
+26		goto	.L20.i
+27		block	block3
+28	
+.L20.i:
+29		load	var1.i	t12.i
+30		load	var2.i	t13.i
+31		sub	t12.i	t13.i	t14.i
+32		ASSIGN	t15.i	#0
+33		neq	t14.i	t15.i	t16.i
+34		block	block4
+35		goto_eq	t16.i	#1	.L32.i
+36		goto	.L31.i
+37		block	block5
+38	
+.L32.i:
+39		load	var3.i	t17.i
+40		ASSIGN	t18.i	#3
+41		add	t17.i	t18.i	t19.i
+42		ASSIGN	t20.i	#2
+43		mod	t19.i	t20.i	t21.i
+44		ASSIGN	t22.i	#0
+45		neq	t21.i	t22.i	t23.i
+46		block	block6
+47	
+.L33.i:
+48	
+.L31.i:
+49	
+.L21.i:
+50	
+.L19.i:
+51		goto_eq	t11.i	#1	.L17.i
+52		goto	.L18.i
+53		block	block7
+54	
+.L17.i:
+55		load	var5.i	t26.i
+56		arg	t26.i
+57		call_void	putint.i
+58	
+.L18.i:
+59		load	var4.i	t27.i
+60		ASSIGN	t28.i	#2
+61		mod	t27.i	t28.i	t29.i
+62		ASSIGN	t30.i	#67
+63		add	t29.i	t30.i	t31.i
+64		ASSIGN	t32.i	#0
+65		jlt	t31.i	t32.i	t33.i
+66		block	block8
+67		goto_eq	t33.i	#1	.L51.i
+68		goto	.L52.i
+69		block	block9
+70	
+.L52.i:
+71		load	var1.i	t34.i
+72		load	var2.i	t35.i
+73		sub	t34.i	t35.i	t36.i
+74		ASSIGN	t37.i	#0
+75		neq	t36.i	t37.i	t38.i
+76		block	block10
+77		goto_eq	t38.i	#1	.L64.i
+78		goto	.L63.i
+79		block	block11
+80	
+.L64.i:
+81		load	var3.i	t39.i
+82		ASSIGN	t40.i	#2
+83		add	t39.i	t40.i	t41.i
+84		ASSIGN	t42.i	#2
+85		mod	t41.i	t42.i	t43.i
+86		ASSIGN	t44.i	#0
+87		neq	t43.i	t44.i	t45.i
+88		block	block12
+89	
+.L65.i:
+90	
+.L63.i:
+91	
+.L53.i:
+92	
+.L51.i:
+93		goto_eq	t33.i	#1	.L49.i
+94		goto	.L50.i
+95		block	block13
+96	
+.L49.i:
+97		ASSIGN	t48.i	#4
+98		ASSIGN	var5.i	t48.i
+99		load	var5.i	t49.i
+100		arg	t49.i
+101		call_void	putint.i
+102	
+.L50.i:
+103		ASSIGN	t50.i	#0
+104		ASSIGN	r0.i	t50.i
+105		goto	.L1.i
+106		block	block14
+107	
+.L1.i:
+108		func_end:	main.i

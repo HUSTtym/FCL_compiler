@@ -1,0 +1,54 @@
+0		block	block1
+1	
+func1.i:
+2		param	var1.i
+3		alloca	#4	.i
+4		alloca	#4	var2.i
+5		load	var1.i	t0.i
+6		ASSIGN	t1.i	#1
+7		jle	t0.i	t1.i	t2.i
+8		block	block2
+9		goto_eq	t2.i	#1	.L2.i
+10		goto	.L3.i
+11		block	block3
+12	
+.L2.i:
+13		CALL	getint.i	t3.i
+14		ASSIGN	var2.i	t3.i
+15		load	var2.i	t4.i
+16		arg	t4.i
+17		call_void	putint.i
+18		goto	.L4.i
+19		block	block4
+20	
+.L3.i:
+21		CALL	getint.i	t5.i
+22		ASSIGN	var2.i	t5.i
+23		load	var1.i	t6.i
+24		ASSIGN	t7.i	#1
+25		sub	t6.i	t7.i	t8.i
+26		arg	t8.i
+27		call_void	func1.i
+28		load	var2.i	t9.i
+29		arg	t9.i
+30		call_void	putint.i
+31	
+.L4.i:
+32	
+.L1.i:
+33		func_end:	func1.i
+34	
+main.i:
+35		alloca	#4	var3.i
+36		ASSIGN	t0.i	#200
+37		ASSIGN	var3.i	t0.i
+38		load	var3.i	t1.i
+39		arg	t1.i
+40		call_void	func1.i
+41		ASSIGN	t2.i	#0
+42		ASSIGN	r0.i	t2.i
+43		goto	.L17.i
+44		block	block5
+45	
+.L17.i:
+46		func_end:	main.i

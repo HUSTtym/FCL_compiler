@@ -1,0 +1,349 @@
+0		block	block1
+1		alloca	#400	var1.i
+2		ASSIGN	t0.i	#87
+3		arroff_expi	var1.i	#0	t0.i
+4		ASSIGN	t1.i	#101
+5		arroff_expi	var1.i	#4	t1.i
+6		ASSIGN	t2.i	#108
+7		arroff_expi	var1.i	#8	t2.i
+8		ASSIGN	t3.i	#99
+9		arroff_expi	var1.i	#12	t3.i
+10		ASSIGN	t4.i	#111
+11		arroff_expi	var1.i	#16	t4.i
+12		ASSIGN	t5.i	#109
+13		arroff_expi	var1.i	#20	t5.i
+14		ASSIGN	t6.i	#101
+15		arroff_expi	var1.i	#24	t6.i
+16		ASSIGN	t7.i	#32
+17		arroff_expi	var1.i	#28	t7.i
+18		ASSIGN	t8.i	#116
+19		arroff_expi	var1.i	#32	t8.i
+20		ASSIGN	t9.i	#111
+21		arroff_expi	var1.i	#36	t9.i
+22		ASSIGN	t10.i	#32
+23		arroff_expi	var1.i	#40	t10.i
+24		ASSIGN	t11.i	#116
+25		arroff_expi	var1.i	#44	t11.i
+26		ASSIGN	t12.i	#104
+27		arroff_expi	var1.i	#48	t12.i
+28		ASSIGN	t13.i	#101
+29		arroff_expi	var1.i	#52	t13.i
+30		ASSIGN	t14.i	#32
+31		arroff_expi	var1.i	#56	t14.i
+32		ASSIGN	t15.i	#74
+33		arroff_expi	var1.i	#60	t15.i
+34		ASSIGN	t16.i	#97
+35		arroff_expi	var1.i	#64	t16.i
+36		ASSIGN	t17.i	#112
+37		arroff_expi	var1.i	#68	t17.i
+38		ASSIGN	t18.i	#97
+39		arroff_expi	var1.i	#72	t18.i
+40		ASSIGN	t19.i	#114
+41		arroff_expi	var1.i	#76	t19.i
+42		ASSIGN	t20.i	#105
+43		arroff_expi	var1.i	#80	t20.i
+44		ASSIGN	t21.i	#32
+45		arroff_expi	var1.i	#84	t21.i
+46		ASSIGN	t22.i	#80
+47		arroff_expi	var1.i	#88	t22.i
+48		ASSIGN	t23.i	#97
+49		arroff_expi	var1.i	#92	t23.i
+50		ASSIGN	t24.i	#114
+51		arroff_expi	var1.i	#96	t24.i
+52		ASSIGN	t25.i	#107
+53		arroff_expi	var1.i	#100	t25.i
+54		ASSIGN	t26.i	#33
+55		arroff_expi	var1.i	#104	t26.i
+56		ASSIGN	t27.i	#10
+57		arroff_expi	var1.i	#108	t27.i
+58		alloca	#1200	var2.i
+59		ASSIGN	t28.i	#83
+60		arroff_expi	var2.i	#0	t28.i
+61		ASSIGN	t29.i	#97
+62		arroff_expi	var2.i	#4	t29.i
+63		ASSIGN	t30.i	#97
+64		arroff_expi	var2.i	#8	t30.i
+65		ASSIGN	t31.i	#98
+66		arroff_expi	var2.i	#12	t31.i
+67		ASSIGN	t32.i	#97
+68		arroff_expi	var2.i	#16	t32.i
+69		ASSIGN	t33.i	#114
+70		arroff_expi	var2.i	#20	t33.i
+71		ASSIGN	t34.i	#117
+72		arroff_expi	var2.i	#24	t34.i
+73		ASSIGN	t35.i	#75
+74		arroff_expi	var2.i	#200	t35.i
+75		ASSIGN	t36.i	#97
+76		arroff_expi	var2.i	#204	t36.i
+77		ASSIGN	t37.i	#98
+78		arroff_expi	var2.i	#208	t37.i
+79		ASSIGN	t38.i	#97
+80		arroff_expi	var2.i	#212	t38.i
+81		ASSIGN	t39.i	#110
+82		arroff_expi	var2.i	#216	t39.i
+83		ASSIGN	t40.i	#72
+84		arroff_expi	var2.i	#400	t40.i
+85		ASSIGN	t41.i	#97
+86		arroff_expi	var2.i	#404	t41.i
+87		ASSIGN	t42.i	#115
+88		arroff_expi	var2.i	#408	t42.i
+89		ASSIGN	t43.i	#104
+90		arroff_expi	var2.i	#412	t43.i
+91		ASSIGN	t44.i	#105
+92		arroff_expi	var2.i	#416	t44.i
+93		ASSIGN	t45.i	#98
+94		arroff_expi	var2.i	#420	t45.i
+95		ASSIGN	t46.i	#105
+96		arroff_expi	var2.i	#424	t46.i
+97		ASSIGN	t47.i	#114
+98		arroff_expi	var2.i	#428	t47.i
+99		ASSIGN	t48.i	#111
+100		arroff_expi	var2.i	#432	t48.i
+101		ASSIGN	t49.i	#107
+102		arroff_expi	var2.i	#436	t49.i
+103		ASSIGN	t50.i	#111
+104		arroff_expi	var2.i	#440	t50.i
+105		ASSIGN	t51.i	#117
+106		arroff_expi	var2.i	#444	t51.i
+107		ASSIGN	t52.i	#65
+108		arroff_expi	var2.i	#600	t52.i
+109		ASSIGN	t53.i	#114
+110		arroff_expi	var2.i	#604	t53.i
+111		ASSIGN	t54.i	#97
+112		arroff_expi	var2.i	#608	t54.i
+113		ASSIGN	t55.i	#105
+114		arroff_expi	var2.i	#612	t55.i
+115		ASSIGN	t56.i	#103
+116		arroff_expi	var2.i	#616	t56.i
+117		ASSIGN	t57.i	#117
+118		arroff_expi	var2.i	#620	t57.i
+119		ASSIGN	t58.i	#109
+120		arroff_expi	var2.i	#624	t58.i
+121		ASSIGN	t59.i	#97
+122		arroff_expi	var2.i	#628	t59.i
+123		ASSIGN	t60.i	#72
+124		arroff_expi	var2.i	#800	t60.i
+125		ASSIGN	t61.i	#117
+126		arroff_expi	var2.i	#804	t61.i
+127		ASSIGN	t62.i	#110
+128		arroff_expi	var2.i	#808	t62.i
+129		ASSIGN	t63.i	#98
+130		arroff_expi	var2.i	#812	t63.i
+131		ASSIGN	t64.i	#111
+132		arroff_expi	var2.i	#816	t64.i
+133		ASSIGN	t65.i	#114
+134		arroff_expi	var2.i	#820	t65.i
+135		ASSIGN	t66.i	#117
+136		arroff_expi	var2.i	#824	t66.i
+137		ASSIGN	t67.i	#116
+138		arroff_expi	var2.i	#828	t67.i
+139		ASSIGN	t68.i	#111
+140		arroff_expi	var2.i	#832	t68.i
+141		ASSIGN	t69.i	#32
+142		arroff_expi	var2.i	#836	t69.i
+143		ASSIGN	t70.i	#80
+144		arroff_expi	var2.i	#840	t70.i
+145		ASSIGN	t71.i	#101
+146		arroff_expi	var2.i	#844	t71.i
+147		ASSIGN	t72.i	#110
+148		arroff_expi	var2.i	#848	t72.i
+149		ASSIGN	t73.i	#103
+150		arroff_expi	var2.i	#852	t73.i
+151		ASSIGN	t74.i	#105
+152		arroff_expi	var2.i	#856	t74.i
+153		ASSIGN	t75.i	#110
+154		arroff_expi	var2.i	#860	t75.i
+155		ASSIGN	t76.i	#84
+156		arroff_expi	var2.i	#1000	t76.i
+157		ASSIGN	t77.i	#97
+158		arroff_expi	var2.i	#1004	t77.i
+159		ASSIGN	t78.i	#105
+160		arroff_expi	var2.i	#1008	t78.i
+161		ASSIGN	t79.i	#114
+162		arroff_expi	var2.i	#1012	t79.i
+163		ASSIGN	t80.i	#105
+164		arroff_expi	var2.i	#1016	t80.i
+165		ASSIGN	t81.i	#107
+166		arroff_expi	var2.i	#1020	t81.i
+167		ASSIGN	t82.i	#117
+168		arroff_expi	var2.i	#1024	t82.i
+169		ASSIGN	t83.i	#32
+170		arroff_expi	var2.i	#1028	t83.i
+171		ASSIGN	t84.i	#79
+172		arroff_expi	var2.i	#1032	t84.i
+173		ASSIGN	t85.i	#111
+174		arroff_expi	var2.i	#1036	t85.i
+175		ASSIGN	t86.i	#107
+176		arroff_expi	var2.i	#1040	t86.i
+177		ASSIGN	t87.i	#97
+178		arroff_expi	var2.i	#1044	t87.i
+179		ASSIGN	t88.i	#109
+180		arroff_expi	var2.i	#1048	t88.i
+181		ASSIGN	t89.i	#105
+182		arroff_expi	var2.i	#1052	t89.i
+183		alloca	#160	var3.i
+184		ASSIGN	t90.i	#32
+185		arroff_expi	var3.i	#0	t90.i
+186		ASSIGN	t91.i	#115
+187		arroff_expi	var3.i	#4	t91.i
+188		ASSIGN	t92.i	#97
+189		arroff_expi	var3.i	#8	t92.i
+190		ASSIGN	t93.i	#121
+191		arroff_expi	var3.i	#12	t93.i
+192		ASSIGN	t94.i	#115
+193		arroff_expi	var3.i	#16	t94.i
+194		ASSIGN	t95.i	#32
+195		arroff_expi	var3.i	#20	t95.i
+196		ASSIGN	t96.i	#104
+197		arroff_expi	var3.i	#24	t96.i
+198		ASSIGN	t97.i	#101
+199		arroff_expi	var3.i	#28	t97.i
+200		ASSIGN	t98.i	#108
+201		arroff_expi	var3.i	#32	t98.i
+202		ASSIGN	t99.i	#108
+203		arroff_expi	var3.i	#36	t99.i
+204		ASSIGN	t100.i	#111
+205		arroff_expi	var3.i	#40	t100.i
+206		ASSIGN	t101.i	#32
+207		arroff_expi	var3.i	#44	t101.i
+208		ASSIGN	t102.i	#116
+209		arroff_expi	var3.i	#48	t102.i
+210		ASSIGN	t103.i	#111
+211		arroff_expi	var3.i	#52	t103.i
+212		ASSIGN	t104.i	#32
+213		arroff_expi	var3.i	#56	t104.i
+214		alloca	#20	var4.i
+215		ASSIGN	t105.i	#10
+216		arroff_expi	var4.i	#0	t105.i
+217	
+func1.i:
+218		param	var5.i
+219		alloca	#4	.i
+220		alloca	#4	var6.i
+221		ASSIGN	t0.i	#0
+222		ASSIGN	var6.i	t0.i
+223	
+.L5.i:
+224		load	var6.i	t1.i
+225		load	var5.i	t2.i
+226		exp_arroff	t3.i,	[t2.i, t1.i]
+227		neq	t3.i	#0	t3.i
+228		block	block2
+229		goto_eq	t3.i	#1	.L6.i
+230		goto	.L7.i
+231		block	block3
+232	
+.L6.i:
+233		load	var6.i	t4.i
+234		load	var5.i	t5.i
+235		exp_arroff	t6.i,	[t5.i, t4.i]
+236		arg	t6.i
+237		call_void	putch.i
+238		load	var6.i	t7.i
+239		ASSIGN	t8.i	#1
+240		add	t7.i	t8.i	t9.i
+241		ASSIGN	var6.i	t9.i
+242		goto	.L5.i
+243		block	block4
+244	
+.L7.i:
+245		load	var6.i	t10.i
+246		ASSIGN	r0.i	t10.i
+247		goto	.L1.i
+248		block	block5
+249	
+.L1.i:
+250		func_end:	func1.i
+251	
+main.i:
+252		ASSIGN	t0.i	#0
+253		arg	var1.i
+254		CALL	func1.i	t1.i
+255		alloca	#4	var7.i
+256		ASSIGN	t2.i	#0
+257		ASSIGN	var7.i	t2.i
+258	
+.L15.i:
+259		ASSIGN	t3.i	#1
+260		neq	t3.i	#0	var7.i
+261		block	block6
+262		goto_eq	t3.i	#1	.L16.i
+263		goto	.L17.i
+264		block	block7
+265	
+.L16.i:
+266		load	var7.i	t4.i
+267		ASSIGN	t5.i	#6
+268		div	t4.i	t5.i	t6.i
+269		alloca	#4	var8.i
+270		ASSIGN	var8.i	t6.i
+271		load	var7.i	t7.i
+272		ASSIGN	t8.i	#6
+273		mod	t7.i	t8.i	t9.i
+274		alloca	#4	var9.i
+275		ASSIGN	var9.i	t9.i
+276		load	var8.i	t10.i
+277		load	var9.i	t11.i
+278		neq	t10.i	t11.i	t12.i
+279		block	block8
+280		goto_eq	t12.i	#1	.L24.i
+281		goto	.L25.i
+282		block	block9
+283	
+.L24.i:
+284		load	var8.i	t13.i
+285		ASSIGN	t14.i	#0
+286		ASSIGN	t15.i	#50
+287		mul	t15.i	t13.i	t16.i
+288		add	t14.i	t16.i	t17.i
+289		exp_arroffa	var2.i	t17.i	t18.i
+290		arg	t18.i
+291		CALL	func1.i	t19.i
+292		ASSIGN	t20.i	#0
+293		arg	var3.i
+294		CALL	func1.i	t21.i
+295		load	var9.i	t22.i
+296		ASSIGN	t23.i	#0
+297		ASSIGN	t24.i	#50
+298		mul	t24.i	t22.i	t25.i
+299		add	t23.i	t25.i	t26.i
+300		exp_arroffa	var2.i	t26.i	t27.i
+301		arg	t27.i
+302		CALL	func1.i	t28.i
+303		ASSIGN	t29.i	#0
+304		arg	var4.i
+305		CALL	func1.i	t30.i
+306	
+.L25.i:
+307		load	var7.i	t31.i
+308		ASSIGN	t32.i	#17
+309		mul	t31.i	t32.i	t33.i
+310		ASSIGN	t34.i	#23
+311		add	t33.i	t34.i	t35.i
+312		ASSIGN	t36.i	#32
+313		mod	t35.i	t36.i	t37.i
+314		ASSIGN	var7.i	t37.i
+315		load	var7.i	t38.i
+316		ASSIGN	t39.i	#0
+317		eq	t38.i	t39.i	t40.i
+318		block	block10
+319		goto_eq	t40.i	#1	.L41.i
+320		goto	.L42.i
+321		block	block11
+322	
+.L41.i:
+323		goto	.L17.i
+324		block	block12
+325	
+.L42.i:
+326		goto	.L15.i
+327		block	block13
+328	
+.L17.i:
+329		ASSIGN	t41.i	#0
+330		ASSIGN	r0.i	t41.i
+331		goto	.L14.i
+332		block	block14
+333	
+.L14.i:
+334		func_end:	main.i

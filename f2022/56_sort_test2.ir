@@ -1,0 +1,172 @@
+0		block	block1
+1		alloca	#4	var1.i
+2	
+func1.i:
+3		param	var2.i
+4		alloca	#4	.i
+5		alloca	#4	var3.i
+6		ASSIGN	t0.i	#1
+7		ASSIGN	var3.i	t0.i
+8	
+.L5.i:
+9		load	var3.i	t1.i
+10		load	var1.i	t2.i
+11		jlt	t1.i	t2.i	t3.i
+12		block	block2
+13		goto_eq	t3.i	#1	.L6.i
+14		goto	.L7.i
+15		block	block3
+16	
+.L6.i:
+17		alloca	#4	var4.i
+18		load	var3.i	t4.i
+19		load	var2.i	t5.i
+20		exp_arroff	t6.i,	[t5.i, t4.i]
+21		ASSIGN	var4.i	t6.i
+22		alloca	#4	var5.i
+23		load	var3.i	t7.i
+24		ASSIGN	t8.i	#1
+25		sub	t7.i	t8.i	t9.i
+26		ASSIGN	var5.i	t9.i
+27	
+.L20.i:
+28		load	var5.i	t10.i
+29		ASSIGN	t11.i	#-1
+30		jgt	t10.i	t11.i	t12.i
+31		block	block4
+32		goto_eq	t12.i	#1	.L24.i
+33		goto	.L23.i
+34		block	block5
+35	
+.L24.i:
+36		load	var4.i	t16.i
+37		load	var5.i	t13.i
+38		load	var2.i	t14.i
+39		exp_arroff	t15.i,	[t14.i, t13.i]
+40		jlt	t16.i	t15.i	t17.i
+41		block	block6
+42	
+.L25.i:
+43	
+.L23.i:
+44		goto_eq	t12.i	#1	.L21.i
+45		goto	.L22.i
+46		block	block7
+47	
+.L21.i:
+48		load	var5.i	t19.i
+49		load	var2.i	t20.i
+50		exp_arroff	t21.i,	[t20.i, t19.i]
+51		load	var5.i	t22.i
+52		ASSIGN	t23.i	#1
+53		add	t22.i	t23.i	t24.i
+54		load	var2.i	t25.i
+55		arroff_exp	t21.i,	[t25.i, t24.i]
+56		load	var5.i	t26.i
+57		ASSIGN	t27.i	#1
+58		sub	t26.i	t27.i	t28.i
+59		ASSIGN	var5.i	t28.i
+60		goto	.L20.i
+61		block	block8
+62	
+.L22.i:
+63		load	var4.i	t32.i
+64		load	var5.i	t29.i
+65		ASSIGN	t30.i	#1
+66		add	t29.i	t30.i	t31.i
+67		load	var2.i	t33.i
+68		arroff_exp	t32.i,	[t33.i, t31.i]
+69		load	var3.i	t34.i
+70		ASSIGN	t35.i	#1
+71		add	t34.i	t35.i	t36.i
+72		ASSIGN	var3.i	t36.i
+73		goto	.L5.i
+74		block	block9
+75	
+.L7.i:
+76		ASSIGN	t37.i	#0
+77		ASSIGN	r0.i	t37.i
+78		goto	.L1.i
+79		block	block10
+80	
+.L1.i:
+81		func_end:	func1.i
+82	
+main.i:
+83		ASSIGN	t0.i	#10
+84		ASSIGN	var1.i	t0.i
+85		alloca	#40	var2.i
+86		ASSIGN	t2.i	#4
+87		ASSIGN	t1.i	#0
+88		arroff_exp	t2.i,	[var2.i, t1.i]
+89		ASSIGN	t4.i	#3
+90		ASSIGN	t3.i	#1
+91		arroff_exp	t4.i,	[var2.i, t3.i]
+92		ASSIGN	t6.i	#9
+93		ASSIGN	t5.i	#2
+94		arroff_exp	t6.i,	[var2.i, t5.i]
+95		ASSIGN	t8.i	#2
+96		ASSIGN	t7.i	#3
+97		arroff_exp	t8.i,	[var2.i, t7.i]
+98		ASSIGN	t10.i	#0
+99		ASSIGN	t9.i	#4
+100		arroff_exp	t10.i,	[var2.i, t9.i]
+101		ASSIGN	t12.i	#1
+102		ASSIGN	t11.i	#5
+103		arroff_exp	t12.i,	[var2.i, t11.i]
+104		ASSIGN	t14.i	#6
+105		ASSIGN	t13.i	#6
+106		arroff_exp	t14.i,	[var2.i, t13.i]
+107		ASSIGN	t16.i	#5
+108		ASSIGN	t15.i	#7
+109		arroff_exp	t16.i,	[var2.i, t15.i]
+110		ASSIGN	t18.i	#7
+111		ASSIGN	t17.i	#8
+112		arroff_exp	t18.i,	[var2.i, t17.i]
+113		ASSIGN	t20.i	#8
+114		ASSIGN	t19.i	#9
+115		arroff_exp	t20.i,	[var2.i, t19.i]
+116		alloca	#4	var3.i
+117		ASSIGN	t21.i	#-52
+118		add	t21.i	fp.i	t22.i
+119		arg	t22.i
+120		CALL	func1.i	t23.i
+121		ASSIGN	var3.i	t23.i
+122	
+.L93.i:
+123		load	var3.i	t24.i
+124		load	var1.i	t25.i
+125		jlt	t24.i	t25.i	t26.i
+126		block	block11
+127		goto_eq	t26.i	#1	.L94.i
+128		goto	.L95.i
+129		block	block12
+130	
+.L94.i:
+131		alloca	#4	var6.i
+132		load	var3.i	t27.i
+133		exp_arroff	t28.i,	[var2.i, t27.i]
+134		ASSIGN	var6.i	t28.i
+135		load	var6.i	t29.i
+136		arg	t29.i
+137		call_void	putint.i
+138		ASSIGN	t30.i	#10
+139		ASSIGN	var6.i	t30.i
+140		load	var6.i	t31.i
+141		arg	t31.i
+142		call_void	putch.i
+143		load	var3.i	t32.i
+144		ASSIGN	t33.i	#1
+145		add	t32.i	t33.i	t34.i
+146		ASSIGN	var3.i	t34.i
+147		goto	.L93.i
+148		block	block13
+149	
+.L95.i:
+150		ASSIGN	t35.i	#0
+151		ASSIGN	r0.i	t35.i
+152		goto	.L56.i
+153		block	block14
+154	
+.L56.i:
+155		func_end:	main.i

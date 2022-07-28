@@ -1,0 +1,137 @@
+0		block	block1
+1	
+func1.i:
+2		param	var1.i
+3		alloca	#4	var2.i
+4		param	var2.i
+5		alloca	#4	var3.i
+6		param	var3.i
+7		alloca	#4	var4.i
+8		param	var4.i
+9		alloca	#4	.i
+10		load	var2.i	t0.i
+11		ASSIGN	t1.i	#0
+12		eq	t0.i	t1.i	t2.i
+13		block	block2
+14		goto_eq	t2.i	#1	.L2.i
+15		goto	.L3.i
+16		block	block3
+17	
+.L2.i:
+18		ASSIGN	t4.i	#1
+19		ASSIGN	t3.i	#0
+20		load	var3.i	t5.i
+21		arroff_exp	t4.i,	[t5.i, t3.i]
+22		ASSIGN	t7.i	#0
+23		ASSIGN	t6.i	#0
+24		load	var4.i	t8.i
+25		arroff_exp	t7.i,	[t8.i, t6.i]
+26		load	var1.i	t9.i
+27		ASSIGN	r0.i	t9.i
+28		goto	.L1.i
+29		block	block4
+30		goto	.L4.i
+31		block	block5
+32	
+.L3.i:
+33		load	var1.i	t10.i
+34		load	var2.i	t11.i
+35		mod	t10.i	t11.i	t12.i
+36		load	var3.i	t13.i
+37		load	var4.i	t14.i
+38		arg	t12.i
+39		arg	t13.i
+40		arg	t14.i
+41		arg	t11.i
+42		CALL	func1.i	t15.i
+43		alloca	#4	var5.i
+44		ASSIGN	var5.i	t15.i
+45		ASSIGN	t16.i	#0
+46		load	var3.i	t17.i
+47		exp_arroff	t18.i,	[t17.i, t16.i]
+48		alloca	#4	var6.i
+49		ASSIGN	var6.i	t18.i
+50		ASSIGN	t19.i	#0
+51		load	var4.i	t20.i
+52		exp_arroff	t21.i,	[t20.i, t19.i]
+53		ASSIGN	t22.i	#0
+54		load	var3.i	t23.i
+55		arroff_exp	t21.i,	[t23.i, t22.i]
+56		load	var6.i	t29.i
+57		div	t10.i	t11.i	t24.i
+58		ASSIGN	t25.i	#0
+59		load	var4.i	t26.i
+60		exp_arroff	t27.i,	[t26.i, t25.i]
+61		mul	t24.i	t27.i	t28.i
+62		sub	t29.i	t28.i	t30.i
+63		ASSIGN	t31.i	#0
+64		load	var4.i	t32.i
+65		arroff_exp	t30.i,	[t32.i, t31.i]
+66		load	var5.i	t33.i
+67		ASSIGN	r0.i	t33.i
+68		goto	.L1.i
+69		block	block6
+70	
+.L4.i:
+71	
+.L1.i:
+72		func_end:	func1.i
+73	
+main.i:
+74		alloca	#4	var1.i
+75		ASSIGN	t0.i	#7
+76		ASSIGN	var1.i	t0.i
+77		alloca	#4	var2.i
+78		ASSIGN	t1.i	#15
+79		ASSIGN	var2.i	t1.i
+80		alloca	#4	var3.i
+81		ASSIGN	t2.i	#0
+82		arg	t2.i
+83		ASSIGN	t3.i	#4
+84		arg	t3.i
+85		ASSIGN	t4.i	#-24
+86		add	t4.i	 .i	t5.i
+87		arg	t5.i
+88		call_void	memset(PLT).i
+89		ASSIGN	t6.i	#1
+90		arroff_expi	var3.i	#0	t6.i
+91		alloca	#4	var4.i
+92		ASSIGN	t7.i	#0
+93		arg	t7.i
+94		ASSIGN	t8.i	#4
+95		arg	t8.i
+96		ASSIGN	t9.i	#-28
+97		add	t9.i	 .i	t10.i
+98		arg	t10.i
+99		call_void	memset(PLT).i
+100		ASSIGN	t11.i	#1
+101		arroff_expi	var4.i	#0	t11.i
+102		load	var2.i	t12.i
+103		ASSIGN	t13.i	#-24
+104		add	t13.i	fp.i	t14.i
+105		ASSIGN	t15.i	#-28
+106		add	t15.i	fp.i	t16.i
+107		load	var1.i	t17.i
+108		arg	t12.i
+109		arg	t14.i
+110		arg	t16.i
+111		arg	t17.i
+112		CALL	func1.i	t18.i
+113		ASSIGN	t19.i	#0
+114		exp_arroff	t20.i,	[var3.i, t19.i]
+115		mod	t20.i	t12.i	t21.i
+116		add	t21.i	t12.i	t22.i
+117		mod	t22.i	t12.i	t23.i
+118		ASSIGN	t24.i	#0
+119		arroff_exp	t23.i,	[var3.i, t24.i]
+120		ASSIGN	t25.i	#0
+121		exp_arroff	t26.i,	[var3.i, t25.i]
+122		arg	t26.i
+123		call_void	putint.i
+124		ASSIGN	t27.i	#0
+125		ASSIGN	r0.i	t27.i
+126		goto	.L32.i
+127		block	block7
+128	
+.L32.i:
+129		func_end:	main.i

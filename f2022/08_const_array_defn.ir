@@ -1,0 +1,22 @@
+0		block	block1
+1		alloca	#20	var1.i
+2		ASSIGN	t0.i	#0
+3		arroff_expi	var1.i	#0	t0.i
+4		ASSIGN	t1.i	#1
+5		arroff_expi	var1.i	#4	t1.i
+6		ASSIGN	t2.i	#2
+7		arroff_expi	var1.i	#8	t2.i
+8		ASSIGN	t3.i	#3
+9		arroff_expi	var1.i	#12	t3.i
+10		ASSIGN	t4.i	#4
+11		arroff_expi	var1.i	#16	t4.i
+12	
+main.i:
+13		ASSIGN	t0.i	#4
+14		exp_arroff	t1.i,	[var1.i, t0.i]
+15		ASSIGN	r0.i	t1.i
+16		goto	.L1.i
+17		block	block2
+18	
+.L1.i:
+19		func_end:	main.i

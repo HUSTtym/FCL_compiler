@@ -1,0 +1,122 @@
+0		block	block1
+1	
+func1.i:
+2		param	var1.i
+3		alloca	#4	var2.i
+4		param	var2.i
+5		alloca	#4	.i
+6		load	var1.i	t0.i
+7		arg	t0.i
+8		call_void	putint.i
+9		ASSIGN	t1.i	#32
+10		arg	t1.i
+11		call_void	putch.i
+12		load	var2.i	t2.i
+13		arg	t2.i
+14		call_void	putint.i
+15		ASSIGN	t3.i	#44
+16		arg	t3.i
+17		call_void	putch.i
+18		ASSIGN	t4.i	#32
+19		arg	t4.i
+20		call_void	putch.i
+21	
+.L1.i:
+22		func_end:	func1.i
+23	
+func2.i:
+24		param	var3.i
+25		alloca	#4	var4.i
+26		param	var4.i
+27		alloca	#4	var5.i
+28		param	var5.i
+29		alloca	#4	var6.i
+30		param	var6.i
+31		alloca	#4	t3.i
+32		load	var3.i	t0.i
+33		ASSIGN	t1.i	#1
+34		eq	t0.i	t1.i	t2.i
+35		block	block2
+36		goto_eq	t2.i	#1	.L3.i
+37		goto	.L4.i
+38		block	block3
+39	
+.L3.i:
+40		load	var6.i	t3.i
+41		load	var4.i	t4.i
+42		arg	t3.i
+43		arg	t4.i
+44		call_void	func1.i
+45		goto	.L5.i
+46		block	block4
+47	
+.L4.i:
+48		load	var4.i	t5.i
+49		load	var6.i	t6.i
+50		load	var5.i	t7.i
+51		load	var3.i	t8.i
+52		ASSIGN	t9.i	#1
+53		sub	t8.i	t9.i	t10.i
+54		arg	t5.i
+55		arg	t6.i
+56		arg	t7.i
+57		arg	t10.i
+58		call_void	func2.i
+59		arg	t6.i
+60		arg	t5.i
+61		call_void	func1.i
+62		ASSIGN	t11.i	#1
+63		sub	t8.i	t11.i	t12.i
+64		arg	t7.i
+65		arg	t5.i
+66		arg	t6.i
+67		arg	t12.i
+68		call_void	func2.i
+69	
+.L5.i:
+70	
+.L2.i:
+71		func_end:	func2.i
+72	
+main.i:
+73		CALL	getint.i	t0.i
+74		alloca	#4	var3.i
+75		ASSIGN	var3.i	t0.i
+76	
+.L16.i:
+77		load	var3.i	t1.i
+78		ASSIGN	t2.i	#0
+79		jgt	t1.i	t2.i	t3.i
+80		block	block5
+81		goto_eq	t3.i	#1	.L17.i
+82		goto	.L18.i
+83		block	block6
+84	
+.L17.i:
+85		ASSIGN	t4.i	#1
+86		ASSIGN	t5.i	#2
+87		ASSIGN	t6.i	#3
+88		CALL	getint.i	t7.i
+89		arg	t4.i
+90		arg	t5.i
+91		arg	t6.i
+92		arg	t7.i
+93		call_void	func2.i
+94		ASSIGN	t8.i	#10
+95		arg	t8.i
+96		call_void	putch.i
+97		load	var3.i	t9.i
+98		ASSIGN	t10.i	#1
+99		sub	t9.i	t10.i	t11.i
+100		ASSIGN	var3.i	t11.i
+101		goto	.L16.i
+102		block	block7
+103	
+.L18.i:
+104		ASSIGN	t12.i	#0
+105		ASSIGN	r0.i	t12.i
+106		goto	.L15.i
+107		block	block8
+108	
+.L15.i:
+109		func_end:	main.i

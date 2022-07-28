@@ -1,0 +1,5 @@
+      for (int pai = 0; pai < g_sL.glo_ymT[g_sL.now_func].paramnum; pai++)
+            {
+                tmp_sym_in.paras[pai] = g_sL.glo_ymT[g_sL.now_func].paras[pai];
+            }
+            tmp_sym_in.paramnum = g_sL.glo_ymT[g_sL.now_func].paramnum;

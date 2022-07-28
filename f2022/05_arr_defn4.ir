@@ -1,0 +1,126 @@
+0		block	block1
+1	
+main.i:
+2		alloca	#32	var1.i
+3		ASSIGN	t0.i	#0
+4		arg	t0.i
+5		ASSIGN	t1.i	#32
+6		arg	t1.i
+7		ASSIGN	t2.i	#-44
+8		add	t2.i	 .i	t3.i
+9		arg	t3.i
+10		call_void	memset(PLT).i
+11		ASSIGN	t4.i	#1
+12		arroff_expi	var1.i	#0	t4.i
+13		ASSIGN	t5.i	#2
+14		arroff_expi	var1.i	#4	t5.i
+15		ASSIGN	t6.i	#3
+16		arroff_expi	var1.i	#8	t6.i
+17		ASSIGN	t7.i	#4
+18		arroff_expi	var1.i	#12	t7.i
+19		arroff_expi0	var1.i	#24	#16
+20		ASSIGN	t8.i	#7
+21		arroff_expi	var1.i	#24	t8.i
+22		alloca	#32	var3.i
+23		ASSIGN	t9.i	#0
+24		arg	t9.i
+25		ASSIGN	t10.i	#32
+26		arg	t10.i
+27		ASSIGN	t11.i	#-80
+28		add	t11.i	 .i	t12.i
+29		arg	t12.i
+30		call_void	memset(PLT).i
+31		arroff_expi0	var3.i	#32	#0
+32		alloca	#32	var4.i
+33		ASSIGN	t13.i	#0
+34		arg	t13.i
+35		ASSIGN	t14.i	#32
+36		arg	t14.i
+37		ASSIGN	t15.i	#-112
+38		add	t15.i	 .i	t16.i
+39		arg	t16.i
+40		call_void	memset(PLT).i
+41		ASSIGN	t17.i	#1
+42		arroff_expi	var4.i	#0	t17.i
+43		ASSIGN	t18.i	#2
+44		arroff_expi	var4.i	#4	t18.i
+45		ASSIGN	t19.i	#3
+46		arroff_expi	var4.i	#8	t19.i
+47		ASSIGN	t20.i	#4
+48		arroff_expi	var4.i	#12	t20.i
+49		ASSIGN	t21.i	#5
+50		arroff_expi	var4.i	#16	t21.i
+51		ASSIGN	t22.i	#6
+52		arroff_expi	var4.i	#20	t22.i
+53		ASSIGN	t23.i	#7
+54		arroff_expi	var4.i	#24	t23.i
+55		ASSIGN	t24.i	#8
+56		arroff_expi	var4.i	#28	t24.i
+57		ASSIGN	t25.i	#6
+58		exp_arroff	t26.i,	[var1.i, t25.i]
+59		alloca	#32	var5.i
+60		ASSIGN	t27.i	#0
+61		arg	t27.i
+62		ASSIGN	t28.i	#32
+63		arg	t28.i
+64		ASSIGN	t29.i	#-144
+65		add	t29.i	 .i	t30.i
+66		arg	t30.i
+67		call_void	memset(PLT).i
+68		ASSIGN	t31.i	#1
+69		arroff_expi	var5.i	#0	t31.i
+70		ASSIGN	t32.i	#2
+71		arroff_expi	var5.i	#4	t32.i
+72		ASSIGN	t33.i	#3
+73		arroff_expi	var5.i	#8	t33.i
+74		arroff_expi0	var5.i	#16	#12
+75		ASSIGN	t34.i	#5
+76		arroff_expi	var5.i	#16	t34.i
+77		arroff_expi0	var5.i	#24	#20
+78		arroff_expi	var5.i	#24	t26.i
+79		ASSIGN	t35.i	#8
+80		arroff_expi	var5.i	#28	t35.i
+81		ASSIGN	t36.i	#5
+82		exp_arroff	t37.i,	[var5.i, t36.i]
+83		ASSIGN	t38.i	#5
+84		exp_arroff	t39.i,	[var4.i, t38.i]
+85		alloca	#32	var6.i
+86		ASSIGN	t40.i	#0
+87		arg	t40.i
+88		ASSIGN	t41.i	#32
+89		arg	t41.i
+90		ASSIGN	t42.i	#-176
+91		add	t42.i	 .i	t43.i
+92		arg	t43.i
+93		call_void	memset(PLT).i
+94		arroff_expi	var6.i	#0	t37.i
+95		arroff_expi	var6.i	#4	t39.i
+96		ASSIGN	t44.i	#3
+97		arroff_expi	var6.i	#8	t44.i
+98		ASSIGN	t45.i	#4
+99		arroff_expi	var6.i	#12	t45.i
+100		ASSIGN	t46.i	#5
+101		arroff_expi	var6.i	#16	t46.i
+102		ASSIGN	t47.i	#6
+103		arroff_expi	var6.i	#20	t47.i
+104		ASSIGN	t48.i	#7
+105		arroff_expi	var6.i	#24	t48.i
+106		ASSIGN	t49.i	#8
+107		arroff_expi	var6.i	#28	t49.i
+108		ASSIGN	t50.i	#7
+109		exp_arroff	t51.i,	[var6.i, t50.i]
+110		ASSIGN	t52.i	#0
+111		exp_arroff	t53.i,	[var6.i, t52.i]
+112		add	t51.i	t53.i	t54.i
+113		ASSIGN	t55.i	#1
+114		exp_arroff	t56.i,	[var6.i, t55.i]
+115		add	t54.i	t56.i	t57.i
+116		ASSIGN	t58.i	#6
+117		exp_arroff	t59.i,	[var5.i, t58.i]
+118		add	t57.i	t59.i	t60.i
+119		ASSIGN	r0.i	t60.i
+120		goto	.L1.i
+121		block	block2
+122	
+.L1.i:
+123		func_end:	main.i
